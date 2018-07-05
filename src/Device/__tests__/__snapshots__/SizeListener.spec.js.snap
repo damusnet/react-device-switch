@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeviceSizeListener /> creates a provider correctly on the client for a desktop 1`] = `Desktop Content`;
+
+exports[`<DeviceSizeListener /> creates a provider correctly on the client for a mobile 1`] = `Mobile Content`;
+
+exports[`<DeviceSizeListener /> creates a provider correctly on the server 1`] = `Mobile Content`;

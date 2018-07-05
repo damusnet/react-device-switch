@@ -1,0 +1,83 @@
+{
+  "name": "react-device-switch",
+  "version": "0.0.0-semantically-released",
+  "description": "A react component to render different content on mobile and desktop. Uses window.matchMedia API.",
+  "main": "dist/index.cjs.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "source": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "precommit": "lint-staged",
+    "test": "jest",
+    "test:watch": "jest --watch --no-cache --notify",
+    "test:cover": "jest --coverage"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add",
+      "eslint",
+      "jest --bail --findRelatedTests --no-cache"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damusnet/react-device-switch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/damusnet/react-device-switch/issues"
+  },
+  "homepage": "https://github.com/damusnet/react-device-switch#readme",
+  "author": "Damien Varron <damien@varron.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^0.14.3",
+    "jest": "^23.3.0",
+    "lint-staged": "^7.2.0",
+    "microbundle": "^0.5.1",
+    "prettier": "^1.13.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-testing-library": "^4.1.2"
+  }
+}
