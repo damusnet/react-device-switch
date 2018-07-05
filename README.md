@@ -114,7 +114,7 @@ MIT
 [github-star]: https://github.com/damusnet/react-device-switch/stargazers
 [twitter]: https://twitter.com/intent/tweet?text=Check%20out%20react-device-switch!%20https://github.com/damusnet/react-device-switch%20%F0%9F%91%8D
 [twitter-badge]: https://img.shields.io/twitter/url/https/github.com/damusnet/react-device-switch.svg?style=social
-[gzip-badge]: http://img.badgesize.io/https://unpkg.com/react-device-switch/dist/react-device-switch.umd.min.js?compression=gzip&label=gzip%20size&style=plastic
-[size-badge]: http://img.badgesize.io/https://unpkg.com/react-device-switch/dist/react-device-switch.umd.min.js?label=size&style=plastic
+[gzip-badge]: http://img.badgesize.io/https://unpkg.com/react-device-switch/dist/index.umd.js?compression=gzip&label=gzip%20size&style=plastic
+[size-badge]: http://img.badgesize.io/https://unpkg.com/react-device-switch/dist/index.umd.js?label=size&style=plastic
 [unpkg-dist]: https://unpkg.com/react-device-switch/dist/
 [module-formats-badge]: https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20es-green.svg?style=plastic
