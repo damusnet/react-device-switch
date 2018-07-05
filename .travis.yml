@@ -9,15 +9,24 @@ node_js:
   - '10'
 script:
   - npm run lint
-  - npm run test
+  - npm run test:cover
   - npm run build
+  - cd example && npm install && npm run build
 after_success:
   - npx codecov
 deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - npx semantic-release
+  - provider: script
+    skip_cleanup: true
+    script:
+      - npx semantic-release
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GH_TOKEN
+    keep-history: true
+    local-dir: example/build
+    target-branch: gh-pages
+    on:
+      branch: master
 branches:
   only:
     - master
