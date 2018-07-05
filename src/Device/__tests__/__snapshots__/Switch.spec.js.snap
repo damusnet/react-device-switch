@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeviceSwitch /> renders desktop content correctly on DESKTOP 1`] = `Desktop Content`;
+
+exports[`<DeviceSwitch /> renders mobile content correctly on MOBILE 1`] = `Mobile Content`;

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeviceMobile /> renders mobile content correctly on MOBILE 1`] = `Mobile Content`;
+
+exports[`<DeviceMobile /> renders no mobile content on DESKTOP 1`] = `null`;
