@@ -11,7 +11,7 @@ script:
   - npm run lint
   - npm run test:cover
   - npm run build
-  - cd example && npm install && npm run build
+  - cd example && npm install && npm run build && cd ..
 after_success:
   - npx codecov
 deploy:
